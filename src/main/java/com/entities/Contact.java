@@ -1,6 +1,6 @@
 package com.entities;
 
-public class ContactEntity
+public class Contact
 {
     private Long contactId;
     private String firstName;
@@ -8,17 +8,17 @@ public class ContactEntity
     private String phone;
     private String email;
 
-    public ContactEntity() {
+    public Contact() {
     }
 
-    public ContactEntity(String firstName, String lastName, String phone, String email) {
+    public Contact(String firstName, String lastName, String phone, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
         this.email = email;
     }
 
-    public ContactEntity(Long contactId, String firstName, String lastName, String phone, String email) {
+    public Contact(Long contactId, String firstName, String lastName, String phone, String email) {
         this.contactId = contactId;
         this.firstName = firstName;
         this.lastName = lastName;

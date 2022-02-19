@@ -1,6 +1,6 @@
 package com.dao;
 
-import com.entities.ContactEntity;
+import com.entities.Contact;
 
 import java.util.List;
 
@@ -12,12 +12,12 @@ public class ContactManager {
     }
 
     // Добавление контакта - возвращает ID добавленного контакта
-    public Long addContact(ContactEntity contact) {
+    public Long addContact(Contact contact) {
         return dao.addContact(contact);
     }
 
     // Редактирование контакта
-    public void updateContact(ContactEntity contact) {
+    public void updateContact(Contact contact) {
         dao.updateContact(contact);
     }
 
@@ -27,12 +27,12 @@ public class ContactManager {
     }
 
     // Получение одного контакта
-    public ContactEntity getContact(Long contactId) {
+    public Contact getContact(Long contactId) {
         return dao.getContact(contactId);
     }
 
     // Получение списка контактов
-    public List<ContactEntity> findContacts() {
+    public List<Contact> findContacts() {
         return dao.findContacts();
     }
 }

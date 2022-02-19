@@ -1,20 +1,20 @@
 package com.dao;
 
 
-import com.entities.ContactEntity;
+import com.entities.Contact;
 
 import java.util.List;
 
 public interface ContactDAO {
     // Добавление контакта - возвращает ID добавленного контакта
-    public Long addContact(ContactEntity contact);
+    public Long addContact(Contact contact);
     // Редактирование контакта
-    public void updateContact(ContactEntity contact);
+    public void updateContact(Contact contact);
     // Удаление контакта по его ID
     public void deleteContact(Long contactId);
     // Получение контакта
-    public ContactEntity getContact(Long contactId);
+    public Contact getContact(Long contactId);
     // Получение списка контактов
-    public List<ContactEntity> findContacts();
+    public List<Contact> findContacts();
 
 }
